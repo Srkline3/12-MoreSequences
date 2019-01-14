@@ -410,4 +410,3 @@ def rectangles_from_circles(circles):
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
 main()
-#
