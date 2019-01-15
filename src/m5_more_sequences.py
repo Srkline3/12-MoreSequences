@@ -16,8 +16,8 @@ import rosegraphics as rg
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    run_test_sum_radii()
-    run_test_count_last_n_odds()
+    #run_test_sum_radii()
+    #run_test_count_last_n_odds()
     run_test_index_of_first_negative()
     run_test_contains_an_a()
 
@@ -235,10 +235,13 @@ def index_of_first_negative(numbers):
       :rtype: int
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #     The testing code is already written for you (above).
     # -------------------------------------------------------------------------
-
+    for k in range(len(numbers)):
+        if numbers[k] < 0:
+            return k
+    return -1
 
 def run_test_contains_an_a():
     """ Tests the   contains_an_a   function. """
@@ -306,10 +309,12 @@ def contains_an_a(s):
     #   Use an explicit loop, as you have done in the other problems.
     #   No fair using the   count   or   find   string methods.
     # -------------------------------------------------------------------------
-
+    for k in range(len(s)):
+        if s[k] == 'a':
+            return True
+    return False
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
 main()
-range()
